@@ -2,12 +2,15 @@
 // js/ui.js - RESPONSÁVEL POR DESENHAR NA TELA
 // ==========================================
 
+// Variáveis de estado global
+let pacoteAbertoAtual = null; 
 let peixeAtualSelecionado = null;
 let slotAtualSelecionado = null;
 let itemAtualSelecionado = null;
 let elementoItemNoModal = null;
 let salaAbertaAtual = null;
 
+// Referências de Modais
 const modalPeixe = document.getElementById("modal-peixe");
 const modalAldeoes = document.getElementById("modal-aldeoes");
 const modalItem = document.getElementById("modal-item");
@@ -29,7 +32,7 @@ function atualizarContador() {
     contadorTexto.innerText = `${pegos} / ${total}`;
 }
 
-// 🐟 DESENHAR PEIXES
+// 🐟 PEIXES
 function gerarPeixes() {
     const container = document.getElementById("container-grid-peixes");
     if (!container) return; container.innerHTML = "";
@@ -56,7 +59,7 @@ function gerarPeixes() {
     atualizarContador();
 }
 
-// 🧑‍🌾 DESENHAR ALDEÕES
+// 🧑‍🌾 ALDEÕES
 function gerarAldeoes() {
     const container = document.getElementById("container-grid-aldeoes");
     if (!container) return; container.innerHTML = "";
@@ -64,7 +67,6 @@ function gerarAldeoes() {
         const slot = document.createElement("div");
         slot.className = "aldeao-slot";
         slot.innerHTML = `<img src="${aldeao.retrato}" class="aldeao-img"><span class="aldeao-nome">${aldeao.nome}</span>`;
-        
         slot.addEventListener("click", () => {
             document.getElementById("modal-aldeao-img").src = aldeao.retrato;
             document.getElementById("modal-aldeao-nome").innerText = aldeao.nome;
@@ -76,19 +78,14 @@ function gerarAldeoes() {
                 const c = document.getElementById(id); c.innerHTML = "";
                 lista.forEach(n => {
                     const info = listaItens[n]; if(!info) return;
-                    
                     const b = document.createElement("div"); 
                     b.className = "item-presente-btn";
-                    
-                    // 🧠 A MÁGICA HÍBRIDA 
                     const nomeParaTela = info.nome ? info.nome : n; 
-                    
                     b.innerHTML = `<img src="${info.img}"><span>${nomeParaTela}</span>`;
                     b.addEventListener("click", (e) => { e.stopPropagation(); abrirDetalhesItem(n); });
                     c.appendChild(b);
                 });
             };
-            
             criarLista("modal-aldeao-amados", aldeao.itensAmados);
             criarLista("modal-aldeao-odiados", aldeao.itensOdiados);
             modalAldeoes.style.display = "flex";
@@ -97,36 +94,22 @@ function gerarAldeoes() {
     });
 }
 
-// 🏛️ DESENHAR CENTRO COMUNITÁRIO
-// 🏛️ DESENHAR CENTRO COMUNITÁRIO (MENU PRINCIPAL DAS SALAS)
+// 🏛️ CENTRO COMUNITÁRIO
 function gerarCentro() {
     const container = document.getElementById("container-grid-centro");
-    if (!container) return; 
-    container.innerHTML = "";
-    
-    // Pegamos a lista de itens entregues para checar o progresso
+    if (!container) return; container.innerHTML = "";
     const entregues = stardewStorage.obterItens();
 
     dadosCentro.forEach(comodo => {
         const slot = document.createElement("div");
         slot.className = "sala-centro-slot";
-
-        // --- LÓGICA DE VERIFICAÇÃO DA SALA COMPLETA ---
-        const salaEstaCompleta = comodo.conjuntos.every(conjunto => 
-            conjunto.itens.every(item => entregues.includes(item))
+        const salaEstaCompleta = comodo.conjuntos.every(conj => 
+            conj.itens.every(item => entregues.includes(item))
         );
-
-        // Decide qual imagem mostrar no ícone do menu
-        const imagemParaExibir = salaEstaCompleta ? comodo.imgPronta : comodo.img;
-
-        // Se estiver completa, adicionamos uma classe para efeitos no CSS
+        const imgExibir = salaEstaCompleta ? comodo.imgPronta : comodo.img;
         if (salaEstaCompleta) slot.classList.add("sala-completa");
 
-        slot.innerHTML = `
-            <img src="${imagemParaExibir}" class="sala-centro-img">
-            <span class="aldeao-nome">${comodo.nome}</span>
-        `;
-        
+        slot.innerHTML = `<img src="${imgExibir}" class="sala-centro-img"><span class="aldeao-nome">${comodo.nome}</span>`;
         slot.addEventListener("click", () => {
             salaAbertaAtual = comodo;
             abrirModalSala(comodo);
@@ -136,12 +119,10 @@ function gerarCentro() {
 }
 
 function abrirModalSala(comodo) {
+    pacoteAbertoAtual = null;
     document.getElementById("btn-fechar-modal-centro").style.display = "block";
-    
-    // 1. Pegar a referência da imagem (ajustado para o ID que está no seu HTML)
     const imgSala = document.getElementById("modal-centro-sala-img");
     document.getElementById("modal-centro-nome").innerText = comodo.nome;
-    
     const container = document.getElementById("container-conjuntos");
     container.innerHTML = `<div class="banner-recompensa">🎁 Recompensa: ${comodo.recompensa}</div>`;
     
@@ -149,43 +130,42 @@ function abrirModalSala(comodo) {
     gridConjuntos.className = "lista-presentes";
     const entregues = stardewStorage.obterItens();
 
-    // 2. Lógica para verificar se a sala inteira está pronta
-    // Verificamos se cada conjunto da sala tem todos os itens na lista de 'entregues'
-    const salaCompleta = comodo.conjuntos.every(conjunto => 
-        conjunto.itens.every(item => entregues.includes(item))
+    const salaCompleta = comodo.conjuntos.every(conj => 
+        conj.itens.every(item => entregues.includes(item))
     );
-
-    // 3. Troca a imagem: se a sala estiver completa, usa imgPronta. Se não, usa a img normal.
-    // (Lembre-se de adicionar o campo imgPronta no seu data/centro.js)
     imgSala.src = salaCompleta ? comodo.imgPronta : comodo.img;
-
-    // 4. Opcional: Efeito visual para a sala restaurada
     imgSala.style.filter = salaCompleta ? "drop-shadow(0 0 10px gold)" : "none";
 
     comodo.conjuntos.forEach(conjunto => {
         const btnConjunto = document.createElement("div");
         btnConjunto.className = "conjunto-slot";
-        
         const completo = conjunto.itens.every(item => entregues.includes(item));
-        if (completo) {
-            btnConjunto.classList.add("completo"); // Classe para quando o conjunto está pronto
-        } else {
-            btnConjunto.classList.add("bloqueado"); // Classe para quando ainda falta algo
-        }
+        if (completo) btnConjunto.classList.add("completo");
+        else btnConjunto.classList.add("bloqueado");
 
         btnConjunto.innerHTML = `<img src="${conjunto.icone}" class="conjunto-img"><span class="conjunto-nome">${conjunto.nome}</span>`;
         btnConjunto.addEventListener("click", () => abrirItensDoConjunto(conjunto));
         gridConjuntos.appendChild(btnConjunto);
     });
-    
     container.appendChild(gridConjuntos);
     modalCentro.style.display = "flex";
 }
 
-
 function abrirItensDoConjunto(conjunto) {
+    pacoteAbertoAtual = conjunto;
     document.getElementById("btn-fechar-modal-centro").style.display = "none";
     const container = document.getElementById("container-conjuntos");
+
+    // 👇 Atualiza a imagem da sala aqui dentro também
+    if (salaAbertaAtual) {
+        const imgSala = document.getElementById("modal-centro-sala-img");
+        const entregues = stardewStorage.obterItens();
+        const salaCompleta = salaAbertaAtual.conjuntos.every(c => 
+            c.itens.every(item => entregues.includes(item))
+        );
+        imgSala.src = salaCompleta ? salaAbertaAtual.imgPronta : salaAbertaAtual.img;
+        imgSala.style.filter = salaCompleta ? "drop-shadow(0 0 10px gold)" : "none";
+    }
     
     container.innerHTML = `
         <div class="tag-conjunto-topo"><span class="texto-titulo-conjunto">${conjunto.nome}</span></div>
@@ -199,29 +179,25 @@ function abrirItensDoConjunto(conjunto) {
 
     conjunto.itens.forEach(nome => {
         const info = listaItens[nome]; if (!info) return;
-        
         const btn = document.createElement("div");
         btn.className = "item-presente-btn";
         if (!entregues.includes(nome)) btn.classList.add("bloqueado");
-        
-        // 🧠 A MÁGICA HÍBRIDA (Aqui estava faltando no seu!)
         const nomeParaTela = info.nome ? info.nome : nome; 
-        
         btn.innerHTML = `<img src="${info.img}"><span>${nomeParaTela}</span>`;
         btn.addEventListener("click", (e) => { e.stopPropagation(); abrirDetalhesItem(nome, btn); });
         gridItens.appendChild(btn);
     });
 
-    document.getElementById("btn-voltar-conjuntos").addEventListener("click", () => abrirModalSala(salaAbertaAtual));
+    document.getElementById("btn-voltar-conjuntos").addEventListener("click", () => {
+        pacoteAbertoAtual = null; 
+        abrirModalSala(salaAbertaAtual);
+    });
 }
 
-// 📦 DETALHES DO ITEM
 function abrirDetalhesItem(nomeItem, elementoClicado = null) {
     const item = listaItens[nomeItem]; if (!item) return;
     itemAtualSelecionado = nomeItem;
     elementoItemNoModal = elementoClicado;
-    
-    // 🧠 MÁGICA NO MODAL TAMBÉM
     const nomeParaTela = item.nome ? item.nome : nomeItem;
     
     document.getElementById("modal-item-img").src = item.img;
@@ -240,4 +216,3 @@ function abrirDetalhesItem(nomeItem, elementoClicado = null) {
     }
     modalItem.style.display = "flex";
 }
-
