@@ -120,8 +120,8 @@ const dadosCentro = [
     {
     nome: "Sala da Caldeira", 
         recompensa: "Carrinhos de Mina", 
-        img: "https://stardewvalleywiki.com/mediawiki/images/b/be/Boiler_Room.png", 
-        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/a/a0/Finished_Crafts_Room.png",
+        img: "https://stardewvalleywiki.com/mediawiki/images/7/7d/Community_Center_Boiler_Room.png", 
+        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/2/2e/Finished_Boiler_Room.png",
         conjuntos: [
             { 
                 nome: "Ferreiro", 
@@ -145,9 +145,9 @@ const dadosCentro = [
     },
     {
     nome: "Mural de Recados", 
-        recompensa: "Carrinhos de Mina", 
-        img: "https://stardewvalleywiki.com/mediawiki/images/b/be/Boiler_Room.png", 
-        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/a/a0/Finished_Crafts_Room.png",
+        recompensa: "amizade", 
+        img:"https://stardewvalleywiki.com/mediawiki/images/1/16/Community_Center_Bulletin_Board_PT.png",
+        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/7/76/Finished_Bulletin_Board.png",
         conjuntos: [
             { 
                 nome: "Ferreiro", 
@@ -172,8 +172,8 @@ const dadosCentro = [
     {
     nome: "Cofre", 
         recompensa: "Carrinhos de Mina", 
-        img: "https://stardewvalleywiki.com/mediawiki/images/b/be/Boiler_Room.png", 
-        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/a/a0/Finished_Crafts_Room.png",
+        img: "https://stardewvalleywiki.com/mediawiki/images/5/59/Community_Center_Vault.png", 
+        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/6/6a/Finished_Vault_Room.png",
         conjuntos: [
             { 
                 nome: "Ferreiro", 
@@ -199,8 +199,8 @@ const dadosCentro = [
     {
     nome: "Mercado joja abandonado", 
         recompensa: "Carrinhos de Mina", 
-        img: "https://stardewvalleywiki.com/mediawiki/images/b/be/Boiler_Room.png", 
-        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/a/a0/Finished_Crafts_Room.png",
+        img: "https://stardewvalleywiki.com/mediawiki/images/6/6c/JojaMart_Abandoned.png", 
+        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/6/6c/JojaMart_Abandoned.png",
         conjuntos: [
             { 
                 nome: "Ferreiro", 
