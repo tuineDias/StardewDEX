@@ -122,19 +122,43 @@ function abrirModalSala(comodo) {
     pacoteAbertoAtual = null;
     document.getElementById("btn-fechar-modal-centro").style.display = "block";
     const imgSala = document.getElementById("modal-centro-sala-img");
-    document.getElementById("modal-centro-nome").innerText = comodo.nome;
+    const nomeSala = document.getElementById("modal-centro-nome"); // Referência ao título
     const container = document.getElementById("container-conjuntos");
-    container.innerHTML = `<div class="banner-recompensa">🎁 Recompensa: ${comodo.recompensa}</div>`;
     
-    const gridConjuntos = document.createElement("div");
-    gridConjuntos.className = "lista-presentes";
     const entregues = stardewStorage.obterItens();
-
     const salaCompleta = comodo.conjuntos.every(conj => 
         conj.itens.every(item => entregues.includes(item))
     );
+
+    // 1. Define o nome da sala e limpa estilos anteriores
+    nomeSala.innerText = comodo.nome;
+    
+    // 2. Lógica do Texto "Concluído"
+    // Remove qualquer aviso de concluído que já existia para não duplicar
+    const avisoAntigo = document.getElementById("aviso-concluido");
+    if (avisoAntigo) avisoAntigo.remove();
+
+    if (salaCompleta) {
+        const spanConcluido = document.createElement("div");
+        spanConcluido.id = "aviso-concluido";
+        spanConcluido.innerText = "✨ Concluído! ✨";
+        spanConcluido.style.color = "#27ae60"; // Verde esmeralda
+        spanConcluido.style.fontWeight = "bold";
+        spanConcluido.style.fontSize = "1.2rem";
+        spanConcluido.style.marginTop = "5px";
+        spanConcluido.style.textShadow = "1px 1px 2px rgba(0,0,0,0.1)";
+        
+        // Insere o texto logo após o nome da sala
+        nomeSala.parentNode.insertBefore(spanConcluido, nomeSala.nextSibling);
+    }
+
+    // ... resto do código (imagens e filtros) continua igual
     imgSala.src = salaCompleta ? comodo.imgPronta : comodo.img;
     imgSala.style.filter = salaCompleta ? "drop-shadow(0 0 10px gold)" : "none";
+
+    container.innerHTML = `<div class="banner-recompensa">🎁 Recompensa: ${comodo.recompensa}</div>`;
+    const gridConjuntos = document.createElement("div");
+    gridConjuntos.className = "lista-presentes";
 
     comodo.conjuntos.forEach(conjunto => {
         const btnConjunto = document.createElement("div");
@@ -151,6 +175,7 @@ function abrirModalSala(comodo) {
     modalCentro.style.display = "flex";
 }
 
+
 function abrirItensDoConjunto(conjunto) {
     pacoteAbertoAtual = conjunto;
     document.getElementById("btn-fechar-modal-centro").style.display = "none";
@@ -165,6 +190,27 @@ function abrirItensDoConjunto(conjunto) {
         );
         imgSala.src = salaCompleta ? salaAbertaAtual.imgPronta : salaAbertaAtual.img;
         imgSala.style.filter = salaCompleta ? "drop-shadow(0 0 10px gold)" : "none";
+        
+        
+        // Dentro de abrirItensDoConjunto(conjunto), logo após atualizar a imagem:
+const nomeSala = document.getElementById("modal-centro-nome");
+const avisoAntigo = document.getElementById("aviso-concluido");
+if (avisoAntigo) avisoAntigo.remove();
+
+const salaCompletaAgora = salaAbertaAtual.conjuntos.every(c => 
+    c.itens.every(item => entregues.includes(item))
+);
+
+if (salaCompletaAgora) {
+    const spanConcluido = document.createElement("div");
+    spanConcluido.id = "aviso-concluido";
+    spanConcluido.innerText = "✨ Concluído! ✨";
+    spanConcluido.style.color = "#27ae60";
+    spanConcluido.style.fontWeight = "bold";
+    nomeSala.parentNode.insertBefore(spanConcluido, nomeSala.nextSibling);
+}
+
+        
     }
     
     container.innerHTML = `
