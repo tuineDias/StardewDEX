@@ -240,3 +240,16 @@ body {
 .texto-titulo-conjunto { color: #ffffff !important; font-weight: bold; font-size: 14px; text-transform: uppercase; display: block; }
 .banner-recompensa { background: #27ae60; color: white; padding: 8px; border-radius: 4px; text-align: center; font-weight: bold; margin-bottom: 15px;}
 .banner-recompensa-conjunto { background: #2980b9; color: white; padding: 6px; border-radius: 4px; text-align: center; font-weight: bold; margin-bottom: 12px; font-size: 11px;}
+
+
+
+/* Quando a sala estiver completa no menu principal */
+.sala-centro-slot.sala-completa {
+    border: 2px solid #ffd700;
+    background: rgba(255, 215, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.sala-centro-slot.sala-completa .sala-centro-img {
+    filter: drop-shadow(0 0 5px gold);
+}

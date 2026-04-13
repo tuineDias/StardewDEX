@@ -98,13 +98,35 @@ function gerarAldeoes() {
 }
 
 // 🏛️ DESENHAR CENTRO COMUNITÁRIO
+// 🏛️ DESENHAR CENTRO COMUNITÁRIO (MENU PRINCIPAL DAS SALAS)
 function gerarCentro() {
     const container = document.getElementById("container-grid-centro");
-    if (!container) return; container.innerHTML = "";
+    if (!container) return; 
+    container.innerHTML = "";
+    
+    // Pegamos a lista de itens entregues para checar o progresso
+    const entregues = stardewStorage.obterItens();
+
     dadosCentro.forEach(comodo => {
         const slot = document.createElement("div");
         slot.className = "sala-centro-slot";
-        slot.innerHTML = `<img src="${comodo.img}" class="sala-centro-img"><span class="aldeao-nome">${comodo.nome}</span>`;
+
+        // --- LÓGICA DE VERIFICAÇÃO DA SALA COMPLETA ---
+        const salaEstaCompleta = comodo.conjuntos.every(conjunto => 
+            conjunto.itens.every(item => entregues.includes(item))
+        );
+
+        // Decide qual imagem mostrar no ícone do menu
+        const imagemParaExibir = salaEstaCompleta ? comodo.imgPronta : comodo.img;
+
+        // Se estiver completa, adicionamos uma classe para efeitos no CSS
+        if (salaEstaCompleta) slot.classList.add("sala-completa");
+
+        slot.innerHTML = `
+            <img src="${imagemParaExibir}" class="sala-centro-img">
+            <span class="aldeao-nome">${comodo.nome}</span>
+        `;
+        
         slot.addEventListener("click", () => {
             salaAbertaAtual = comodo;
             abrirModalSala(comodo);

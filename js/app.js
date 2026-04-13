@@ -49,6 +49,12 @@ document.getElementById("check-item-entregue")?.addEventListener("change", (e) =
         elementoItemNoModal?.classList.add("bloqueado"); 
     }
     stardewStorage.salvarItens(ents);
+
+    // --- 👇 AS LINHAS QUE RESOLVEM O SEU PROBLEMA 👇 ---
+    gerarCentro(); // Atualiza os ícones das salas no menu principal (o fundo)
+    if (salaAbertaAtual) {
+        abrirModalSala(salaAbertaAtual); // Atualiza a imagem grande dentro da sala aberta
+    }
 });
 
 // [COLE AQUI A LÓGICA DE FILTROS DOS PEIXES QUE CONSTRUÍMOS ANTES]
