@@ -115,8 +115,11 @@ function gerarCentro() {
 
 function abrirModalSala(comodo) {
     document.getElementById("btn-fechar-modal-centro").style.display = "block";
-    document.getElementById("modal-centro-img").src = comodo.img;
+    
+    // 1. Pegar a referência da imagem (ajustado para o ID que está no seu HTML)
+    const imgSala = document.getElementById("modal-centro-sala-img");
     document.getElementById("modal-centro-nome").innerText = comodo.nome;
+    
     const container = document.getElementById("container-conjuntos");
     container.innerHTML = `<div class="banner-recompensa">🎁 Recompensa: ${comodo.recompensa}</div>`;
     
@@ -124,19 +127,39 @@ function abrirModalSala(comodo) {
     gridConjuntos.className = "lista-presentes";
     const entregues = stardewStorage.obterItens();
 
+    // 2. Lógica para verificar se a sala inteira está pronta
+    // Verificamos se cada conjunto da sala tem todos os itens na lista de 'entregues'
+    const salaCompleta = comodo.conjuntos.every(conjunto => 
+        conjunto.itens.every(item => entregues.includes(item))
+    );
+
+    // 3. Troca a imagem: se a sala estiver completa, usa imgPronta. Se não, usa a img normal.
+    // (Lembre-se de adicionar o campo imgPronta no seu data/centro.js)
+    imgSala.src = salaCompleta ? comodo.imgPronta : comodo.img;
+
+    // 4. Opcional: Efeito visual para a sala restaurada
+    imgSala.style.filter = salaCompleta ? "drop-shadow(0 0 10px gold)" : "none";
+
     comodo.conjuntos.forEach(conjunto => {
         const btnConjunto = document.createElement("div");
         btnConjunto.className = "conjunto-slot";
+        
         const completo = conjunto.itens.every(item => entregues.includes(item));
-        if (!completo) btnConjunto.classList.add("bloqueado");
+        if (completo) {
+            btnConjunto.classList.add("completo"); // Classe para quando o conjunto está pronto
+        } else {
+            btnConjunto.classList.add("bloqueado"); // Classe para quando ainda falta algo
+        }
 
         btnConjunto.innerHTML = `<img src="${conjunto.icone}" class="conjunto-img"><span class="conjunto-nome">${conjunto.nome}</span>`;
         btnConjunto.addEventListener("click", () => abrirItensDoConjunto(conjunto));
         gridConjuntos.appendChild(btnConjunto);
     });
+    
     container.appendChild(gridConjuntos);
     modalCentro.style.display = "flex";
 }
+
 
 function abrirItensDoConjunto(conjunto) {
     document.getElementById("btn-fechar-modal-centro").style.display = "none";

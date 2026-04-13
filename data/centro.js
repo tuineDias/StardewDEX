@@ -3,6 +3,7 @@ const dadosCentro = [
         nome: "Sala de Artesanato", 
         recompensa: "Ponte Consertada", 
         img: "https://stardewvalleywiki.com/mediawiki/images/1/11/Community_Center_Crafts_Room.png", 
+        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/a/a0/Finished_Crafts_Room.png",
         conjuntos: [
             { 
                 nome: "Primavera", 
@@ -27,13 +28,30 @@ const dadosCentro = [
                 icone: "https://stardewvalleywiki.com/mediawiki/images/1/17/Winter_Foraging_Bundle.png", 
                 itens: ["Raiz de inverno", "Fruta de cristal", "Inhame de neve", "Flor de açafrão"], 
                 recompensa: "30 Sementes de Inverno" 
+            },
+            
+             { 
+                nome: "Construção", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/7/7a/Construction_Bundle.png", 
+                itens: ["Raiz de inverno", "Fruta de cristal", "Inhame de neve", "Flor de açafrão"], 
+                recompensa: "30 Sementes de Inverno" 
+            },
+            
+             { 
+                nome: "Recursos Exóticos", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/7/7a/Construction_Bundle.png", 
+                itens: ["Raiz de inverno", "Fruta de cristal", "Inhame de neve", "Flor de açafrão"], 
+                recompensa: "30 Sementes de Inverno" 
             }
+            
+            
         ]     
     },
     { 
         nome: "Caldeira", 
         recompensa: "Carrinhos de Mina", 
         img: "https://stardewvalleywiki.com/mediawiki/images/b/be/Boiler_Room.png", 
+        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/a/a0/Finished_Crafts_Room.png",
         conjuntos: [
             { 
                 nome: "Ferreiro", 
