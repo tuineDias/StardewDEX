@@ -44,11 +44,160 @@ const dadosCentro = [
                 recompensa: "30 Sementes de Inverno" 
             }
             
-            
         ]     
     },
     { 
-        nome: "Caldeira", 
+        nome: "Copa", 
+        recompensa: "Carrinhos de Mina", 
+        img: "https://stardewvalleywiki.com/mediawiki/images/b/be/Boiler_Room.png", 
+        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/a/a0/Finished_Crafts_Room.png",
+        conjuntos: [
+            { 
+                nome: "Plantações de primavera", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/5/51/Spring_Crops_Bundle.png", 
+                itens: ["Barra de cobre", "Barra de ferro", "Barra de ouro"], 
+                recompensa: "Fornalha" 
+            },
+            { 
+                nome: "Plantações de verão", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/2/27/Summer_Crops_Bundle.png", 
+                itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
+                recompensa: "Omnigeodo (5)" 
+            },
+            { 
+                nome: "Plantações de Outono", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/2/22/Bundle_Red.png", 
+                itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
+                recompensa: "Anel Pequeno Magnético" 
+            },
+                { 
+                nome: "Plantações de qualidade", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/b/b5/Bundle_Purple.png", 
+                itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
+                recompensa: "Omnigeodo (5)" 
+            },
+                { 
+                nome: "Conjunto de Animais", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/b/b5/Bundle_Purple.png", 
+                itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
+                recompensa: "Omnigeodo (5)" 
+            },
+                { 
+                nome: "Conjunto de Artesão", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/b/b5/Bundle_Purple.png", 
+                itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
+                recompensa: "Omnigeodo (5)" 
+            },
+        ]     
+    },
+    
+    {
+        nome: "Aquário", 
+        recompensa: "Carrinhos de Mina", 
+        img: "https://stardewvalleywiki.com/mediawiki/images/b/be/Boiler_Room.png", 
+        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/a/a0/Finished_Crafts_Room.png",
+        conjuntos: [
+            { 
+                nome: "Ferreiro", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/c/c2/Bundle_Copper.png", 
+                itens: ["Barra de cobre", "Barra de ferro", "Barra de ouro"], 
+                recompensa: "Fornalha" 
+            },
+            { 
+                nome: "Geólogo", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/b/b5/Bundle_Purple.png", 
+                itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
+                recompensa: "Omnigeodo (5)" 
+            },
+            { 
+                nome: "Aventureiro", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/2/22/Bundle_Red.png", 
+                itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
+                recompensa: "Anel Pequeno Magnético" 
+            }
+        ]     
+    },
+    {
+    nome: "Sala da Caldeira", 
+        recompensa: "Carrinhos de Mina", 
+        img: "https://stardewvalleywiki.com/mediawiki/images/b/be/Boiler_Room.png", 
+        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/a/a0/Finished_Crafts_Room.png",
+        conjuntos: [
+            { 
+                nome: "Ferreiro", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/c/c2/Bundle_Copper.png", 
+                itens: ["Barra de cobre", "Barra de ferro", "Barra de ouro"], 
+                recompensa: "Fornalha" 
+            },
+            { 
+                nome: "Geólogo", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/b/b5/Bundle_Purple.png", 
+                itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
+                recompensa: "Omnigeodo (5)" 
+            },
+            { 
+                nome: "Aventureiro", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/2/22/Bundle_Red.png", 
+                itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
+                recompensa: "Anel Pequeno Magnético" 
+            }
+        ]     
+    },
+    {
+    nome: "Mural de Recados", 
+        recompensa: "Carrinhos de Mina", 
+        img: "https://stardewvalleywiki.com/mediawiki/images/b/be/Boiler_Room.png", 
+        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/a/a0/Finished_Crafts_Room.png",
+        conjuntos: [
+            { 
+                nome: "Ferreiro", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/c/c2/Bundle_Copper.png", 
+                itens: ["Barra de cobre", "Barra de ferro", "Barra de ouro"], 
+                recompensa: "Fornalha" 
+            },
+            { 
+                nome: "Geólogo", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/b/b5/Bundle_Purple.png", 
+                itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
+                recompensa: "Omnigeodo (5)" 
+            },
+            { 
+                nome: "Aventureiro", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/2/22/Bundle_Red.png", 
+                itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
+                recompensa: "Anel Pequeno Magnético" 
+            }
+        ]     
+    },
+    {
+    nome: "Cofre", 
+        recompensa: "Carrinhos de Mina", 
+        img: "https://stardewvalleywiki.com/mediawiki/images/b/be/Boiler_Room.png", 
+        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/a/a0/Finished_Crafts_Room.png",
+        conjuntos: [
+            { 
+                nome: "Ferreiro", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/c/c2/Bundle_Copper.png", 
+                itens: ["Barra de cobre", "Barra de ferro", "Barra de ouro"], 
+                recompensa: "Fornalha" 
+            },
+            { 
+                nome: "Geólogo", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/b/b5/Bundle_Purple.png", 
+                itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
+                recompensa: "Omnigeodo (5)" 
+            },
+            { 
+                nome: "Aventureiro", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/2/22/Bundle_Red.png", 
+                itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
+                recompensa: "Anel Pequeno Magnético" 
+            }
+        ]     
+    },
+    
+    {
+    nome: "Mercado joja abandonado", 
         recompensa: "Carrinhos de Mina", 
         img: "https://stardewvalleywiki.com/mediawiki/images/b/be/Boiler_Room.png", 
         imgPronta: "https://stardewvalleywiki.com/mediawiki/images/a/a0/Finished_Crafts_Room.png",
