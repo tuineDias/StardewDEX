@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StardewDex</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head><body>
+
+<div id="tela-inicial">
+    <h1 class="titulo">StardewDex</h1>
+    <div class="menu">
+        <button id="btn-iniciar" class="menu-item">Iniciar</button>
+        <button id="btn-config" class="menu-item">Configurações</button>
+        <button id="btn-sair" class="menu-item">Sair</button>
+    </div>
+</div>
+
+<div id="tela-menu" style="display: none;">
+    <h2 class="titulo">Menu</h2>
+    <div class="menu">
+        <button id="btn-centro" class="menu-item">Centro Comunitário</button>
+        <button id="btn-peixedex" class="menu-item">PeixeDex</button>
+        <button id="btn-aldeoes" class="menu-item">Aldeões</button>
+        <button id="btn-voltar-menu" class="menu-item voltar">Voltar</button>
+    </div>
+</div>
+
+
+<div id="tela-peixes" style="display: none;">
+    <h2 class="titulo">PeixeDex</h2>
+    <div class="menu-peixes"> 
+        <div id="status-progresso">
+            Peixes Capturados: <span id="contador-peixes">0 / 0</span>
+            
+            <div class="botoes-controle">
+                <button id="btn-resetar">Resetar</button>
+                <button id="btn-voltar-peixes" class="voltar btn-peixe-topo">Voltar</button>
+
+                <div class="filtro-container">
+                    <button id="btn-filtro-principal" class="btn-filtro-trigger">
+                        <i class="fas fa-filter"></i> Filtrar
+                    </button>
+                    <div id="menu-filtro-opcoes" class="menu-filtro-opcoes">
+                        <button class="btn-estacao-filtro ativo" data-estacao="todos">Todos</button>
+                        <button class="btn-estacao-filtro" data-estacao="Primavera">Primavera</button>
+                        <button class="btn-estacao-filtro" data-estacao="Verão">Verão</button>
+                        <button class="btn-estacao-filtro" data-estacao="Outono">Outono</button>
+                        <button class="btn-estacao-filtro" data-estacao="Inverno">Inverno</button>
+                        <button class="btn-estacao-filtro" data-estacao="Outros">Especiais</button>
+                    </div>
+                </div>
+                </div>
+        </div>
+        <input type="text" id="input-busca" placeholder="Pesquisar peixe...">
+    </div>
+    <div id="container-grid-peixes" class="grid-peixes"></div>
+</div>
+
+
+
+
+
+      
+
+<div id="modal-peixe" style="display: none;">
+    <div class="modal-conteudo">
+        <img id="modal-img" src="" alt="">
+        <h2 id="modal-nome"></h2>
+        <p><strong>☁️ Estação:</strong> <span id="modal-estacao"></span></p>
+        <p><strong>🕑 Horário:</strong> <span id="modal-horario"></span></p>
+        <p><strong>📌 Local:</strong> <span id="modal-local"></span></p>
+        <p><strong>🖋️ Dicas:</strong> <span id="modal-obs"></span></p>    
+        <label style="font-size: 1.0rem; font-weight: bold;">
+            <input type="checkbox" id="modal-check"> Já capturei!
+        </label>
+        <br>
+        <button class="btn-fechar" id="btn-fechar-modal">Fechar</button>
+    </div>
+</div>
+
+<div id="tela-aldeoes" style="display: none;">
+    <h1 class="titulo">Aldeões</h1>
+    <div id="container-grid-aldeoes" class="grid-aldeoes"></div>
+    <div class="menu">
+        <button class="menu-item voltar">Voltar</button>
+    </div>
+</div>
+
+<div id="modal-aldeoes" class="modal" style="display: none;">
+    <div class="modal-conteudo">
+        <img id="modal-aldeao-img" src="" alt="">
+        <h2 id="modal-aldeao-nome"></h2>
+        <div style="display: inline-block; text-align: left;">
+            <p><strong>🎂 Aniversário:</strong> <span id="modal-aldeao-niver"></span></p>
+            <p><strong>🏠 Endereço:</strong> <span id="modal-aldeao-endereco"></span></p>
+            <p><strong>👨‍👩‍👧‍👦 Família:</strong> <span id="modal-aldeao-familia"></span></p>
+        </div>
+        <div class="secao-presentes">
+            <p><strong>❤️ Ama:</strong></p>
+            <div id="modal-aldeao-amados" class="lista-presentes"></div>
+            <p><strong>💢 Odeia:</strong></p>
+            <div id="modal-aldeao-odiados" class="lista-presentes"></div>
+        </div>
+        <button class="btn-fechar" id="btn-fechar-modal-aldeoes">Fechar</button>
+    </div>
+</div>
+
+<div id="tela-centro" style="display: none;">
+    <h1 class="titulo">Centro Comunitário</h1>
+    <div id="container-grid-centro" class="grid-aldeoes"></div> 
+    <div class="menu">
+        <button class="menu-item voltar">Voltar</button>
+    </div>
+</div>
+
+<div id="modal-centro" class="modal" style="display: none;">
+    <div class="modal-conteudo">
+        <img id="modal-centro-img" src="" alt="" style="width: 80px;">
+        <h2 id="modal-centro-nome"></h2>
+        <div id="container-conjuntos" class="secao-presentes"></div>
+        <button class="btn-fechar" id="btn-fechar-modal-centro">Fechar</button>
+    </div>
+</div>
+
+<div id="modal-item" class="modal" style="display: none;">
+    <div class="modal-conteudo">
+        <img id="modal-item-img" src="" alt="">
+        <h2 id="modal-item-nome"></h2>
+        <div style="text-align: left; display: inline-block;">
+            <p><strong>💰 Preço:</strong> <span id="modal-item-preco"></span></p>
+            <p><strong>📍 Onde achar:</strong> <span id="modal-item-local"></span></p>
+            <p><strong>🖋️ Dicas:</strong> <span id="modal-item-obs"></span></p>
+        </div>
+        
+        <div id="secao-entrega-item" style="display: none; margin-top: 15px; background: rgba(0,0,0,0.1); padding: 10px; border-radius: 8px;">
+            <label style="font-weight: bold; color: #5c2d11; cursor: pointer;">
+                <input type="checkbox" id="check-item-entregue"> Entregue ao Centro!
+            </label>
+        </div>
+
+        <br>
+        <button class="btn-fechar" id="btn-fechar-modal-item">Fechar</button>
+    </div>
+</div>
+<script src="data/itens.js"></script>
+    <script src="data/peixes.js"></script>
+    <script src="data/moradores.js"></script>
+    <script src="data/centro.js"></script>
+    
+    <script src="js/storage.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

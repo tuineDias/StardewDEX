@@ -1,0 +1,174 @@
+const listaItens = {
+    "Raiz forte": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/9/90/Wild_Horseradish.png", 
+        preco: "50g", 
+        local: "Coleta", 
+        obs: "Raiz picante." 
+    },
+    "Narciso": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/4/4b/Daffodil.png", 
+        preco: "30g", 
+        local: "Coleta", 
+        obs: "Flor amarela." 
+    },
+    "alho-porô": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/5/57/Leek.png", 
+        preco: "30g", 
+        local: "Coleta", 
+        obs: "Um item maneiro." 
+    },
+    "Dente-de-leão": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/b/b1/Dandelion.png", 
+        preco: "30g", 
+        local: "Coleta", 
+        obs: "Um item legal." 
+    },
+    "Uva": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/c/c2/Grape.png", 
+        preco: "30g", 
+        local: "Coleta", 
+        obs: "Doce e roxa." 
+    },
+    "Café de jardim": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/c/c6/Spice_Berry.png", 
+        preco: "30g", 
+        local: "Coleta", 
+        obs: "Baga vermelha de verão." 
+    },
+    "Ervilha-de-cheiro": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/d/d9/Sweet_Pea.png", 
+        preco: "50g", 
+        local: "Verão", 
+        obs: "Fragrante." 
+    },
+    "Cogumelo comum": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/2/2e/Common_Mushroom.png", 
+        preco: "40g", 
+        local: "Outono", 
+        obs: "Pode ser frito." 
+    },
+    "Ameixa selvagem": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/3/3b/Wild_Plum.png", 
+        preco: "80g", 
+        local: "Outono", 
+        obs: "Fruta ácida." 
+    },
+    "Avelã": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/3/31/Hazelnut.png", 
+        preco: "90g", 
+        local: "Outono", 
+        obs: "Esquilos adoram." 
+    },
+    "Amora": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/2/25/Blackberry.png", 
+        preco: "20g", 
+        local: "Outono", 
+        obs: "Cresce em arbustos." 
+    },
+    "Raiz de inverno": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/1/11/Winter_Root.png", 
+        preco: "70g", 
+        local: "Inverno", 
+        obs: "Cava na neve." 
+    },
+    "Fruta de cristal": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/1/16/Crystal_Fruit.png", 
+        preco: "150g", 
+        local: "Inverno", 
+        obs: "Parece gelo." 
+    },
+    "Inhame de neve": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/3/3f/Snow_Yam.png", 
+        preco: "100g", 
+        local: "Inverno", 
+        obs: "Tubérculo gelado." 
+    },
+    "Flor de açafrão": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/2/2f/Crocus.png", 
+        preco: "60g", 
+        local: "Inverno", 
+        obs: "Flor de inverno." 
+    },
+    "Barra de cobre": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/f/f0/Copper_Bar.png", 
+        preco: "60g", 
+        local: "Fornalha", 
+        obs: "5 minérios + carvão." 
+    },
+    "Barra de ferro": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/6/6c/Iron_Bar.png", 
+        preco: "120g", 
+        local: "Fornalha", 
+        obs: "Fundição." 
+    },
+    "Barra de ouro": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/4/4e/Gold_Bar.png", 
+        preco: "250g", 
+        local: "Fornalha", 
+        obs: "Valor alto." 
+    },
+    "Quartzo": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/c/cf/Quartz.png", 
+        preco: "25g", 
+        local: "Minas", 
+        obs: "Gema comum." 
+    },
+    "Cristal de terra": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/7/74/Earth_Crystal.png", 
+        preco: "50g", 
+        local: "Minas", 
+        obs: "Níveis baixos." 
+    },
+    "Lágrima congelada": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/e/ec/Frozen_Tear.png", 
+        preco: "75g", 
+        local: "Minas", 
+        obs: "Nível 40+." 
+    },
+    "Essência solar": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/f/f4/Solar_Essence.png", 
+        preco: "40g", 
+        local: "Monstros", 
+        obs: "Cai de Fantasmas." 
+    },
+    "Baba solar": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/3/38/Slime.png", 
+        preco: "5g", 
+        local: "Slimes", 
+        obs: "Gosma comum." 
+    },
+    "Asa de morcego": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/3/3c/Bat_Wing.png", 
+        preco: "15g", 
+        local: "Morcegos", 
+        obs: "Asa preta." 
+    },
+    "Essência vazia": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/1/1f/Void_Essence.png", 
+        preco: "50g", 
+        local: "Xamãs", 
+        obs: "Poder sombrio." 
+    },
+        "ametista": { 
+        nome: "Ametista", // <-- O nome real que aparece na tela
+        img: "https://stardewvalleywiki.com/mediawiki/images/1/1e/Amethyst.png", 
+        preco: "100g", 
+        local: "Caverna", 
+        obs: "Joia roxa." 
+    },
+    "bolo_chocolate": { 
+        nome: "Bolo de Chocolate", // <-- O nome real que aparece na tela
+        img: "https://stardewvalleywiki.com/mediawiki/images/8/87/Chocolate_Cake.png", 
+        preco: "200g", 
+        local: "Cozinha", 
+        obs: "Delicioso!" 
+    },
+    // ... os outros itens (como Argila, Narciso, etc) continuam do jeito antigo sem problema!
+
+    "Argila": { 
+        img: "https://stardewvalleywiki.com/mediawiki/images/a/af/Clay.png", 
+        preco: "20g", 
+        local: "Solo", 
+        obs: "Solo arado." 
+    }
+};

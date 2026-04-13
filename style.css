@@ -1,0 +1,242 @@
+/* =====================================================
+   🔹 1. GERAL (BASE E TEXTOS)
+   ===================================================== */
+body {
+    background-color: #f4e4bc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    font-size: 10vw;
+    color: #5c2d11;
+    text-align: center;
+    margin-top: 8px; 
+    text-shadow: 2px 2px #deb887;
+}
+
+/* =====================================================
+   🔹 2. BOTÕES E MENUS
+   ===================================================== */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.menu-item {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: 4px solid #8b4513;
+    border-radius: 6px;
+    background-color: #deb887;
+    color: #5c2d11;
+    font-weight: bold;
+    width: 250px;
+    text-align: center;
+}
+
+.btn-fechar, .btn-voltar-modal {
+    background: #8b4513;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Controles alinhados (PeixeDex) */
+.botoes-controle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#btn-resetar, .btn-peixe-topo {
+    flex: 1;
+    max-width: 90px;
+    height: 35px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #8b4513;
+}
+
+#btn-resetar { background-color: #e74c3c; color: white; border-color: #8b0000; }
+.btn-peixe-topo { background-color: #deb887; color: #5c2d11; }
+
+/* =====================================================
+   🔹 3. GRIDS (AS GRADES DE ORGANIZAÇÃO)
+   ===================================================== */
+.grid-peixes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(65px, 1fr)); 
+    gap: 8px;
+    padding: 10px;
+    justify-items: center;
+}
+
+.grid-aldeoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+#container-grid-centro {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 15px;
+    padding: 10px;
+    justify-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.lista-presentes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 8px;
+    justify-items: center;
+    margin-top: 10px;
+}
+
+/* =====================================================
+   🔹 4. SLOTS (AS CAIXINHAS DOS ITENS)
+   ===================================================== */
+/* Peixes */
+.peixe-slot {
+    background-color: #deb887; border: 3px solid #8b4513; border-radius: 8px;
+    display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+    padding: 5px; width: 65px; height: 85px; box-sizing: border-box; cursor: pointer;
+}
+.peixe-img { width: 35px; height: 35px; image-rendering: pixelated; }
+.peixe-nome { font-size: 10px; font-weight: bold; color: #5c2d11; text-align: center; line-height: 1; word-wrap: break-word; }
+
+/* Aldeões */
+.aldeao-slot {
+    background-color: #f3d19e; border: 4px solid #8b4513; border-radius: 10px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 12px; width: 100px; height: 125px; box-sizing: border-box; cursor: pointer;
+}
+.aldeao-img { width: 70px; height: 70px; border-radius: 4px; }
+.aldeao-nome { font-size: 12px; font-weight: bold; color: #5c2d11; margin-top: 5px; text-align: center;}
+
+/* Centro Comunitário - Salas */
+.sala-centro-slot {
+    background-color: #e3c08d; border: 3px solid #5c2d11; border-radius: 10px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 10px; width: 110px; height: 110px; box-sizing: border-box; cursor: pointer;
+}
+.sala-centro-img { width: 70px; height: 50px; object-fit: contain; margin-bottom: 5px;}
+
+/* Centro Comunitário - Conjuntos */
+.conjunto-slot {
+    background-color: #deb887; border: 3px solid #8b4513; border-radius: 8px;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 6px; width: 80px; cursor: pointer;
+}
+.conjunto-img { width: 55px; height: 55px; image-rendering: pixelated; }
+.conjunto-nome { font-size: 10px; font-weight: bold; color: #5c2d11; text-align: center; }
+
+/* Itens de Presente/Entrega */
+.item-presente-btn {
+    background: #f4e4bc; border: 2px solid #8b4513; border-radius: 6px;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 5px; width: 85px; cursor: pointer;
+}
+.item-presente-btn img { width: 32px; height: 32px; image-rendering: pixelated; }
+.item-presente-btn span { font-size: 10px; font-weight: bold; color: #5c2d11; text-align: center; }
+
+/* =====================================================
+   🔹 5. MENU DE FILTRO (PEIXEDEX)
+   ===================================================== */
+.filtro-container { position: relative; display: inline-block; }
+
+.btn-filtro-trigger {
+    background-color: #deb887; border: 2px solid #8b4513; border-radius: 4px; color: #5c2d11;
+    height: 35px; padding: 0 15px; font-weight: bold; cursor: pointer;
+    display: flex; align-items: center; gap: 8px;
+}
+
+.menu-filtro-opcoes {
+    display: none; position: absolute; top: 40px; right: 0;
+    background-color: #f4e4bc; border: 3px solid #8b4513; border-radius: 8px;
+    z-index: 2500; width: 160px; box-shadow: 4px 4px 0px rgba(0,0,0,0.3); padding: 5px;
+}
+.menu-filtro-opcoes.mostrar { display: block; }
+
+.btn-estacao-filtro {
+    background: none; border: none; border-radius: 4px; color: #5c2d11;
+    width: 100%; text-align: left; padding: 10px; font-weight: bold; 
+    display: flex; align-items: center; gap: 10px; cursor: pointer; 
+}
+.btn-estacao-filtro:hover { background-color: #e3c08d; }
+.btn-estacao-filtro.ativo { background-color: #8b4513; color: white; }
+
+/* =====================================================
+   🔹 6. MODAIS E ALINHAMENTOS DE TEXTO
+   ===================================================== */
+#modal-peixe, #modal-aldeoes, #modal-item, #modal-centro {
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 3000; flex-direction: column; align-items: center; justify-content: center;
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-conteudo {
+    text-align: center; border: 4px solid #8b4513; padding: 20px;
+    background: #deb887; border-radius: 10px; width: 90%; max-width: 400px; max-height: 90vh; overflow-y: auto;
+}
+
+/* Alinhamento de informações (Estação, Horário, Local) */
+.modal-conteudo div[style*="inline-block"] {
+    display: block !important; width: 85% !important; margin: 0 auto !important; 
+}
+.modal-conteudo p {
+    text-align: left !important; margin: 10px 0 !important;
+}
+
+/* Caixa de Dicas / Observações */
+#modal-obs, #modal-item-obs {
+    display: block; background-color: white; border: 2px dashed #8b4513; border-radius: 8px;
+    padding: 12px; margin-top: 10px; margin-bottom: 5px; box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.05);
+    font-style: italic; text-align: left; line-height: 1.5; color: #5c2d11; font-weight: normal; 
+}
+
+/* =====================================================
+   🔹 7. UTILITÁRIOS E BANNERS
+   ===================================================== */
+#status-progresso {
+    text-align: center; color: #5c2d11; font-weight: bold; margin: 0px auto;
+    padding: 8px; background-color: rgba(222, 184, 135, 0.5); border-radius: 8px; width: 90%;
+}
+
+#input-busca {
+    width: 90%; padding: 12px; border: 3px solid #8b4513; border-radius: 10px; 
+    background-color: #f4e4bc; color: #5c2d11; font-weight: bold; margin: 10px auto; display: block;
+}
+
+.bloqueado img { filter: grayscale(100%) brightness(0.8); opacity: 0.5; }
+
+/* Banners do Centro Comunitário */
+.tag-conjunto-topo {
+    background-color: #5c2d11 !important; padding: 10px; border-radius: 4px; margin-bottom: 10px;
+    display: flex; justify-content: center; align-items: center;
+}
+.texto-titulo-conjunto { color: #ffffff !important; font-weight: bold; font-size: 14px; text-transform: uppercase; display: block; }
+.banner-recompensa { background: #27ae60; color: white; padding: 8px; border-radius: 4px; text-align: center; font-weight: bold; margin-bottom: 15px;}
+.banner-recompensa-conjunto { background: #2980b9; color: white; padding: 6px; border-radius: 4px; text-align: center; font-weight: bold; margin-bottom: 12px; font-size: 11px;}
