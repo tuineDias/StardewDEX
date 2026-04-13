@@ -49,8 +49,8 @@ const dadosCentro = [
     { 
         nome: "Copa", 
         recompensa: "Carrinhos de Mina", 
-        img: "https://stardewvalleywiki.com/mediawiki/images/b/be/Boiler_Room.png", 
-        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/a/a0/Finished_Crafts_Room.png",
+        img: "https://stardewvalleywiki.com/mediawiki/images/f/f0/Community_Center_Pantry.png", 
+        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/4/4e/Finished_Pantry.png",
         conjuntos: [
             { 
                 nome: "Plantações de primavera", 
@@ -94,8 +94,8 @@ const dadosCentro = [
     {
         nome: "Aquário", 
         recompensa: "Carrinhos de Mina", 
-        img: "https://stardewvalleywiki.com/mediawiki/images/b/be/Boiler_Room.png", 
-        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/a/a0/Finished_Crafts_Room.png",
+        img: "https://stardewvalleywiki.com/mediawiki/images/0/0c/Community_Center_Fish_Tank.png", 
+        imgPronta: "https://stardewvalleywiki.com/mediawiki/images/c/c0/Finished_Fish_Tank.png",
         conjuntos: [
             { 
                 nome: "Ferreiro", 
