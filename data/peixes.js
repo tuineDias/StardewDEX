@@ -489,5 +489,94 @@
         estacao: "Todas as Estações",
         horario: "Qualquer horário",
      },
+      {
+        nome: "Salmão Mutante",
+        img: "https://stardewvalleywiki.com/mediawiki/images/2/2f/Slimejack.png",
+        local: "Covil dos Insetos",
+        estacao: "Todas as Estações",
+        horario: "Qualquer horário",
+        info: "Encontrado nas águas tóxicas acima dos esgotos."
+    },
+       {
+        nome: "Lula da Meia-noite",
+        img: "https://stardewvalleywiki.com/mediawiki/images/2/24/Midnight_Squid.png",
+        local: "Mercado Noturno",
+        estacao: "Inverno (15-17)",
+        horario: "17h — 2h",
+        info: "Pescada no submarino durante o Mercado Noturno."
+    },
+    {
+        nome: "Peixe Assustador",
+        img: "https://stardewvalleywiki.com/mediawiki/images/a/ad/Spook_Fish.png",
+        local: "Mercado Noturno",
+        estacao: "Inverno (15-17)",
+        horario: "17h — 2h",
+        info: "Peixe de águas profundas pego no submarino."
+    },
+    {
+        nome: "Peixe-bolha",
+        img: "https://stardewvalleywiki.com/mediawiki/images/e/ec/Blobfish.png",
+        local: "Mercado Noturno",
+        estacao: "Inverno (15-17)",
+        horario: "17h — 2h",
+        info: "Um peixe muito valioso e estranho pego no submarino."
+    },
+    {
+        nome: "Arraia",
+        img: "https://stardewvalleywiki.com/mediawiki/images/3/3d/Stingray.png",
+        local: "Ilha Gengibre",
+        estacao: "Todas as Estações",
+        horario: "Qualquer horário",
+        info: "Encontrada na Caverna do Pirata na Ilha Gengibre."
+    },
+    {
+        nome: "Peixe-leão",
+        img: "https://stardewvalleywiki.com/mediawiki/images/3/32/Lionfish.png",
+        local: "Ilha Gengibre",
+        estacao: "Todas as Estações",
+        horario: "Qualquer horário",
+        info: "Comum no mar ao redor da Ilha Gengibre."
+    },
+     {
+        nome: "Acará-disco Azul",
+        img: "https://stardewvalleywiki.com/mediawiki/images/e/ee/Blue_Discus.png",
+        local: "Ilha Gengibre",
+        estacao: "Todas as Estações",
+        horario: "Qualquer horário",
+        info: "Peixe de água doce encontrado nos rios da ilha."
+    },
+    {
+        nome: "Geléia do Rio",
+        img: "https://stardewvalleywiki.com/mediawiki/images/b/b1/River_Jelly.png",
+        local: "Rio",
+        estacao: "Todas as Estações",
+        horario: "Qualquer horário",
+        info: "Item novo da 1.6. Usado para o Defumador de Peixe."
+    },
+    {
+        nome: "Geléia da Caverna",
+        img: "https://stardewvalleywiki.com/mediawiki/images/1/1d/Cave_Jelly.png",
+        local: "Minas",
+        estacao: "Todas as Estações",
+        horario: "Qualquer horário",
+        info: "Item novo da 1.6. Encontrado nos lagos das minas."
+    },
+    {
+        nome: "Geléia do Mar",
+        img: "https://stardewvalleywiki.com/mediawiki/images/e/e0/Sea_Jelly.png",
+        local: "Oceano",
+        estacao: "Todas as Estações",
+        horario: "Qualquer horário",
+        info: "Item novo da 1.6. Dá bônus de Sorte ao comer."
+    },
+    {
+        nome: "Gobi",
+        img: "https://stardewvalleywiki.com/mediawiki/images/b/bf/Goby.png",
+        local: "Cachoeiras",
+        estacao: "Todas as Estações",
+        horario: "Qualquer horário",
+        info: "Item novo da 1.6. Só aparece na base de cachoeiras."
+    }
+
 ];
         
