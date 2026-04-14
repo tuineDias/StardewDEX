@@ -160,8 +160,9 @@ const listaItens = {
         nome: "Bolo de Chocolate", // <-- O nome real que aparece na tela
         img: "https://stardewvalleywiki.com/mediawiki/images/8/87/Chocolate_Cake.png", 
         preco: "200g", 
-        local: "Cozinha", 
-        obs: "Delicioso!" 
+        local: "Cozinha,conjunto cofre 2.500 ouros", 
+        obs: "RECEITA: açúcar, trigo e ovo(obtido da rainha do molho)"
+        
     },
     // ... os outros itens (como Argila, Narciso, etc) continuam do jeito antigo sem problema!
 
@@ -170,8 +171,32 @@ const listaItens = {
         preco: "20g", 
         local: "Solo", 
         obs: "Solo arado." 
-    },
-    
+},
+"item_madeira": { 
+        nome: "Madeira", // <-- O nome real que aparece na tela
+        img: "https://stardewvalleywiki.com/mediawiki/images/d/df/Wood.png", 
+        preco: "2g", 
+        local: "Corte árvores com um machado", 
+        obs: "A Madeira é um recurso básico recursos que pode ser obtido cortando árvores e galhos com um machado ou comprado da Robin na Carpintaria por Gold.png10 ouros no ano 1 e por Gold.png50 ouros no ano 2+. Também pode ser encontrado Baús do Tesouro da pescaria. Noventa e nove madeiras também podem ser recebidas como presente de Robin na Festival da Estrela Invernal."
+        },
+        "":{
+            nome:"",
+            img:"",
+            preço:"",
+            obs:""
+        },
+                "": {
+            nome: "",
+            img: "",
+            preço: "",
+            obs: ""
+        }, 
+                "": {
+            nome: "",
+            img: "",
+            preço: "",
+            obs: ""
+        },
 };
 
 

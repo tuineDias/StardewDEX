@@ -33,13 +33,13 @@ const dadosCentro = [
              { 
                 nome: "Construção", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/7/7a/Construction_Bundle.png", 
-                itens: ["Raiz de inverno", "Fruta de cristal", "Inhame de neve", "Flor de açafrão"], 
+                itens: ["item_madeira", "Fruta de cristal", "Inhame de neve", "Flor de açafrão"], 
                 recompensa: "Carvoaria (1)" 
             },
             
              { 
                 nome: "Recursos Exóticos", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/7/7a/Construction_Bundle.png", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/5/5a/Exotic_Foraging_Bundle.png", 
                 itens: ["Raiz de inverno", "Fruta de cristal", "Inhame de neve", "Flor de açafrão"], 
                 recompensa: "Prato de outono (5)" 
             }
