@@ -179,23 +179,12 @@ const listaItens = {
         local: "Corte árvores com um machado", 
         obs: "A Madeira é um recurso básico recursos que pode ser obtido cortando árvores e galhos com um machado ou comprado da Robin na Carpintaria por Gold.png10 ouros no ano 1 e por Gold.png50 ouros no ano 2+. Também pode ser encontrado Baús do Tesouro da pescaria. Noventa e nove madeiras também podem ser recebidas como presente de Robin na Festival da Estrela Invernal."
         },
-        "":{
-            nome:"",
-            img:"",
-            preço:"",
-            obs:""
-        },
-                "": {
-            nome: "",
-            img: "",
-            preço: "",
-            obs: ""
-        }, 
-                "": {
-            nome: "",
-            img: "",
-            preço: "",
-            obs: ""
+"item_1": { 
+        nome: "Madeira", // <-- O nome real que aparece na tela
+        img: "https://stardewvalleywiki.com/mediawiki/images/d/df/Wood.png", 
+        preco: "2g", 
+        local: "Corte árvores com um machado", 
+        obs: "madeira"
         },
 };
 
