@@ -48,7 +48,7 @@ const dadosCentro = [
     },
     { 
         nome: "Copa", 
-        recompensa: "Reparo da ponte", 
+        recompensa: "Estufa", 
         img: "https://stardewvalleywiki.com/mediawiki/images/f/f0/Community_Center_Pantry.png", 
         imgPronta: "https://stardewvalleywiki.com/mediawiki/images/4/4e/Finished_Pantry.png",
         conjuntos: [
@@ -56,37 +56,37 @@ const dadosCentro = [
                 nome: "Plantações de primavera", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/5/51/Spring_Crops_Bundle.png", 
                 itens: ["Barra de cobre", "Barra de ferro", "Barra de ouro"], 
-                recompensa: "Fornalha" 
+                recompensa: "Solo Foliar (20)" 
             },
             { 
                 nome: "Plantações de verão", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/2/27/Summer_Crops_Bundle.png", 
                 itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
-                recompensa: "Omnigeodo (5)" 
+                recompensa: "Aspersor de qualidade (1)" 
             },
             { 
                 nome: "Plantações de Outono", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/0/0d/Fall_Crops_Bundle.png", 
                 itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
-                recompensa: "Anel Pequeno Magnético" 
+                recompensa: "Apiário (1)" 
             },
                 { 
                 nome: "Plantações de qualidade", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/8/86/Quality_Crops_Bundle.png", 
                 itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
-                recompensa: "Omnigeodo (5)" 
+                recompensa: "Jarra de conserva (1)" 
             },
                 { 
                 nome: "Conjunto de Animais", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/5/52/Animal_Bundle.png", 
                 itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
-                recompensa: "Omnigeodo (5)" 
+                recompensa: "Prensa de queijo (1)" 
             },
                 { 
                 nome: "Conjunto de Artesão", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/7/7a/Artisan_Bundle.png", 
                 itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
-                recompensa: "Omnigeodo (5)" 
+                recompensa: "Barril (1)" 
             },
         ]     
     },
@@ -201,55 +201,50 @@ const dadosCentro = [
     },
     {
     nome: "Cofre", 
-        recompensa: "Carrinhos de Mina", 
+        recompensa: "Reparo de ônibus", 
         img: "https://stardewvalleywiki.com/mediawiki/images/5/59/Community_Center_Vault.png", 
         imgPronta: "https://stardewvalleywiki.com/mediawiki/images/6/6a/Finished_Vault_Room.png",
         conjuntos: [
             { 
-                nome: "Ferreiro", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/c/c2/Bundle_Copper.png", 
+                nome: " 2.500 ouros", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/e/e2/2500_Bundle.png", 
                 itens: ["Barra de cobre", "Barra de ferro", "Barra de ouro"], 
-                recompensa: "Fornalha" 
+                recompensa: "Bolo de chocolate (3)" 
             },
             { 
-                nome: "Geólogo", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/b/b5/Bundle_Purple.png", 
+                nome: "5.000 ouros", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/1/17/5000_Bundle.png", 
                 itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
-                recompensa: "Omnigeodo (5)" 
+                recompensa: "Fertilizante de qualidade (30)" 
             },
             { 
-                nome: "Aventureiro", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/2/22/Bundle_Red.png", 
+                nome: "10.000 ouros", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/1/11/10000_Bundle.png", 
                 itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
-                recompensa: "Anel Pequeno Magnético" 
-            }
+                recompensa: "Para-raios (1)" 
+            },
+             { 
+                nome: "25.000 ouros", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/a/a7/25000_Bundle.png", 
+                itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
+                recompensa: "Cristalário (1)" 
+            },
         ]     
     },
     
     {
     nome: "Mercado joja abandonado", 
-        recompensa: "Carrinhos de Mina", 
+        recompensa: "Cinema", 
         img: "https://stardewvalleywiki.com/mediawiki/images/6/6c/JojaMart_Abandoned.png", 
         imgPronta: "https://stardewvalleywiki.com/mediawiki/images/6/6c/JojaMart_Abandoned.png",
         conjuntos: [
             { 
-                nome: "Ferreiro", 
+                nome: "A Desaparecida", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/c/c2/Bundle_Copper.png", 
                 itens: ["Barra de cobre", "Barra de ferro", "Barra de ouro"], 
-                recompensa: "Fornalha" 
-            },
-            { 
-                nome: "Geólogo", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/b/b5/Bundle_Purple.png", 
-                itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
-                recompensa: "Omnigeodo (5)" 
-            },
-            { 
-                nome: "Aventureiro", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/2/22/Bundle_Red.png", 
-                itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
-                recompensa: "Anel Pequeno Magnético" 
+                recompensa: "??????" 
             }
+            
         ]     
     }
 ];
