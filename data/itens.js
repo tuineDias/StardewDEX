@@ -170,5 +170,8 @@ const listaItens = {
         preco: "20g", 
         local: "Solo", 
         obs: "Solo arado." 
-    }
+    },
+    
 };
+
+
