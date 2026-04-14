@@ -66,7 +66,7 @@ const dadosCentro = [
             },
             { 
                 nome: "Plantações de Outono", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/2/22/Bundle_Red.png", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/0/0d/Fall_Crops_Bundle.png", 
                 itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
                 recompensa: "Anel Pequeno Magnético" 
             },
