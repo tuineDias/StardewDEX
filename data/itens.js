@@ -185,7 +185,7 @@ const listaItens = {
         preco: "2g", 
         local: "Corte árvores com um machado", 
         obs: "madeira"
-        },
+        }
 };
 
 
