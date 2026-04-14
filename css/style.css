@@ -151,7 +151,7 @@ body {
     padding: 8px; width: 80px; cursor: pointer;
 }
 .conjunto-img { width: 80px; height: 80px; image-rendering: pixelated; }
-.conjunto-nome { font-size: 12px; font-weight: bold; color: #5c2d11; text-align: center; }
+.conjunto-nome { font-size: 10px; font-weight: bold; color: #5c2d11; text-align: center; }
 
 /* Itens de Presente/Entrega */
 .item-presente-btn {
