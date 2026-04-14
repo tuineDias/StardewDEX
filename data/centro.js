@@ -101,37 +101,37 @@ const dadosCentro = [
                 nome: "Peixes de Rio", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/c/c6/River_Fish_Bundle.png", 
                 itens: ["Barra de cobre", "Barra de ferro", "Barra de ouro"], 
-                recompensa: "Fornalha" 
+                recompensa: "iscas(30)" 
             },
             { 
                 nome: "Peixes de Lago", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/b/b5/Bundle_Purple.png", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/4/46/Lake_Fish_Bundle.png", 
                 itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
-                recompensa: "Omnigeodo (5)" 
+                recompensa: "Isca artificial (1)" 
             },
             { 
                 nome: "Peixes de Oceano", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/2/22/Bundle_Red.png", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/a/ac/Ocean_Fish_Bundle.png", 
                 itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
-                recompensa: "Anel Pequeno Magnético" 
+                recompensa: "Totem de teletransporte: Praia (5)" 
             },
              { 
                 nome: "Pesca Noturna", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/2/22/Bundle_Red.png", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/a/a7/Night_Fishing_Bundle.png", 
                 itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
-                recompensa: "Anel Pequeno Magnético" 
+                recompensa: "Anel de brilho pequeno (1)" 
             },
             { 
                 nome: "Conjunto Covo", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/2/22/Bundle_Red.png", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/2/22/Crab_Pot_Bundle.png", 
                 itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
-                recompensa: "Anel Pequeno Magnético" 
+                recompensa: "Covo (3)" 
             },
             { 
                 nome: "Peixes Especializados", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/2/22/Bundle_Red.png", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/0/03/Specialty_Fish_Bundle.png", 
                 itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
-                recompensa: "Anel Pequeno Magnético" 
+                recompensa: "Prato do mar (5)" 
             },
         ]     
     },
