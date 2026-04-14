@@ -491,7 +491,7 @@
      },
       {
         nome: "Salmão Mutante",
-        img: "https://stardewvalleywiki.com/mediawiki/images/2/2f/Slimejack.png",
+        img: "https://stardewvalleywiki.com/mediawiki/images/3/34/Slimejack.png",
         local: "Covil dos Insetos",
         estacao: "Todas as Estações",
         horario: "Qualquer horário",
@@ -499,7 +499,7 @@
     },
        {
         nome: "Lula da Meia-noite",
-        img: "https://stardewvalleywiki.com/mediawiki/images/2/24/Midnight_Squid.png",
+        img: "https://stardewvalleywiki.com/mediawiki/images/8/83/Midnight_Squid.png",
         local: "Mercado Noturno",
         estacao: "Inverno (15-17)",
         horario: "17h — 2h",
@@ -507,7 +507,7 @@
     },
     {
         nome: "Peixe Assustador",
-        img: "https://stardewvalleywiki.com/mediawiki/images/a/ad/Spook_Fish.png",
+        img: "https://stardewvalleywiki.com/mediawiki/images/8/8c/Spook_Fish.png",
         local: "Mercado Noturno",
         estacao: "Inverno (15-17)",
         horario: "17h — 2h",
@@ -515,7 +515,7 @@
     },
     {
         nome: "Peixe-bolha",
-        img: "https://stardewvalleywiki.com/mediawiki/images/e/ec/Blobfish.png",
+        img: "https://stardewvalleywiki.com/mediawiki/images/7/7f/Blobfish.png",
         local: "Mercado Noturno",
         estacao: "Inverno (15-17)",
         horario: "17h — 2h",
@@ -523,7 +523,7 @@
     },
     {
         nome: "Arraia",
-        img: "https://stardewvalleywiki.com/mediawiki/images/3/3d/Stingray.png",
+        img: "https://stardewvalleywiki.com/mediawiki/images/3/3a/Stingray.png",
         local: "Ilha Gengibre",
         estacao: "Todas as Estações",
         horario: "Qualquer horário",
@@ -531,7 +531,7 @@
     },
     {
         nome: "Peixe-leão",
-        img: "https://stardewvalleywiki.com/mediawiki/images/3/32/Lionfish.png",
+        img: "https://stardewvalleywiki.com/mediawiki/images/b/bb/Lionfish.png",
         local: "Ilha Gengibre",
         estacao: "Todas as Estações",
         horario: "Qualquer horário",
@@ -547,7 +547,7 @@
     },
     {
         nome: "Geléia do Rio",
-        img: "https://stardewvalleywiki.com/mediawiki/images/b/b1/River_Jelly.png",
+        img: "https://stardewvalleywiki.com/mediawiki/images/8/80/River_Jelly.png",
         local: "Rio",
         estacao: "Todas as Estações",
         horario: "Qualquer horário",
@@ -555,7 +555,7 @@
     },
     {
         nome: "Geléia da Caverna",
-        img: "https://stardewvalleywiki.com/mediawiki/images/1/1d/Cave_Jelly.png",
+        img: "https://stardewvalleywiki.com/mediawiki/images/0/0a/Cave_Jelly.png",
         local: "Minas",
         estacao: "Todas as Estações",
         horario: "Qualquer horário",
@@ -563,7 +563,7 @@
     },
     {
         nome: "Geléia do Mar",
-        img: "https://stardewvalleywiki.com/mediawiki/images/e/e0/Sea_Jelly.png",
+        img: "https://stardewvalleywiki.com/mediawiki/images/d/d5/Sea_Jelly.png",
         local: "Oceano",
         estacao: "Todas as Estações",
         horario: "Qualquer horário",
@@ -571,7 +571,7 @@
     },
     {
         nome: "Gobi",
-        img: "https://stardewvalleywiki.com/mediawiki/images/b/bf/Goby.png",
+        img: "https://stardewvalleywiki.com/mediawiki/images/6/67/Goby.png",
         local: "Cachoeiras",
         estacao: "Todas as Estações",
         horario: "Qualquer horário",
