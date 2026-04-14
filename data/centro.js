@@ -240,7 +240,7 @@ const dadosCentro = [
         conjuntos: [
             { 
                 nome: "A Desaparecida", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/c/c2/Bundle_Copper.png", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/2/24/The_Missing_Bundle.png", 
                 itens: ["Barra de cobre", "Barra de ferro", "Barra de ouro"], 
                 recompensa: "??????" 
             }
