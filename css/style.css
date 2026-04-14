@@ -140,18 +140,18 @@ body {
 .sala-centro-slot {
     background-color: #e3c08d; border: 3px solid #5c2d11; border-radius: 10px;
     display: flex; flex-direction: column; align-items: center; justify-content: center;
-    padding: 10px; width: 110px; height: 110px; box-sizing: border-box; cursor: pointer;
+    padding: 10px; width: 120px; height: 120px; box-sizing: border-box; cursor: pointer;
 }
-.sala-centro-img { width: 70px; height: 50px; object-fit: contain; margin-bottom: 5px;}
+.sala-centro-img { width: 80px; height: 80px; object-fit: contain; margin-bottom: 5px;}
 
 /* Centro Comunitário - Conjuntos */
 .conjunto-slot {
     background-color: #deb887; border: 3px solid #8b4513; border-radius: 8px;
     display: flex; flex-direction: column; align-items: center;
-    padding: 6px; width: 80px; cursor: pointer;
+    padding: 8px; width: 80px; cursor: pointer;
 }
-.conjunto-img { width: 55px; height: 55px; image-rendering: pixelated; }
-.conjunto-nome { font-size: 10px; font-weight: bold; color: #5c2d11; text-align: center; }
+.conjunto-img { width: 80px; height: 80px; image-rendering: pixelated; }
+.conjunto-nome { font-size: 12px; font-weight: bold; color: #5c2d11; text-align: center; }
 
 /* Itens de Presente/Entrega */
 .item-presente-btn {
