@@ -72,19 +72,19 @@ const dadosCentro = [
             },
                 { 
                 nome: "Plantações de qualidade", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/b/b5/Bundle_Purple.png", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/8/86/Quality_Crops_Bundle.png", 
                 itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
                 recompensa: "Omnigeodo (5)" 
             },
                 { 
                 nome: "Conjunto de Animais", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/b/b5/Bundle_Purple.png", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/5/52/Animal_Bundle.png", 
                 itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
                 recompensa: "Omnigeodo (5)" 
             },
                 { 
                 nome: "Conjunto de Artesão", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/b/b5/Bundle_Purple.png", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/7/7a/Artisan_Bundle.png", 
                 itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
                 recompensa: "Omnigeodo (5)" 
             },
