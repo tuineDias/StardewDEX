@@ -9,46 +9,46 @@ const dadosCentro = [
                 nome: "Primavera", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/8/8a/Spring_Foraging_Bundle.png", 
                 itens: ["Raiz forte", "Narciso", "alho-porô", "Dente-de-leão"], 
-                recompensa: "30 Sementes de Primavera" 
+                recompensa: "Sementes de primavera (30)" 
             },
             { 
                 nome: "Verão", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/f/fd/Summer_Foraging_Bundle.png", 
                 itens: ["Uva", "Café de jardim", "Ervilha-de-cheiro"], 
-                recompensa: "30 Sementes de Verão" 
+                recompensa: "Sementes de verão (30)" 
             },
             { 
                 nome: "Outono", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/3/3d/Fall_Foraging_Bundle.png", 
                 itens: ["Cogumelo comum", "Ameixa selvagem", "Avelã", "Amora"], 
-                recompensa: "30 Sementes de Outono" 
+                recompensa: "Sementes de outono (30)" 
             },
             { 
                 nome: "Inverno", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/1/17/Winter_Foraging_Bundle.png", 
                 itens: ["Raiz de inverno", "Fruta de cristal", "Inhame de neve", "Flor de açafrão"], 
-                recompensa: "30 Sementes de Inverno" 
+                recompensa: "Sementes de inverno (30)" 
             },
             
              { 
                 nome: "Construção", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/7/7a/Construction_Bundle.png", 
                 itens: ["Raiz de inverno", "Fruta de cristal", "Inhame de neve", "Flor de açafrão"], 
-                recompensa: "30 Sementes de Inverno" 
+                recompensa: "Carvoaria (1)" 
             },
             
              { 
                 nome: "Recursos Exóticos", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/7/7a/Construction_Bundle.png", 
                 itens: ["Raiz de inverno", "Fruta de cristal", "Inhame de neve", "Flor de açafrão"], 
-                recompensa: "30 Sementes de Inverno" 
+                recompensa: "Prato de outono (5)" 
             }
             
         ]     
     },
     { 
         nome: "Copa", 
-        recompensa: "Carrinhos de Mina", 
+        recompensa: "Reparo da ponte", 
         img: "https://stardewvalleywiki.com/mediawiki/images/f/f0/Community_Center_Pantry.png", 
         imgPronta: "https://stardewvalleywiki.com/mediawiki/images/4/4e/Finished_Pantry.png",
         conjuntos: [
@@ -137,54 +137,66 @@ const dadosCentro = [
     },
     {
     nome: "Sala da Caldeira", 
-        recompensa: "Carrinhos de Mina", 
+        recompensa: "Carrinhos de minas reparados", 
         img: "https://stardewvalleywiki.com/mediawiki/images/7/7d/Community_Center_Boiler_Room.png", 
         imgPronta: "https://stardewvalleywiki.com/mediawiki/images/2/2e/Finished_Boiler_Room.png",
         conjuntos: [
             { 
                 nome: "Ferreiro", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/c/c2/Bundle_Copper.png", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/c/c8/Blacksmith_Bundle.png", 
                 itens: ["Barra de cobre", "Barra de ferro", "Barra de ouro"], 
-                recompensa: "Fornalha" 
+                recompensa: "Fornalha(1)" 
             },
             { 
                 nome: "Geólogo", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/b/b5/Bundle_Purple.png", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/6/68/Geologist%27s_Bundle.png", 
                 itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
                 recompensa: "Omnigeodo (5)" 
             },
             { 
                 nome: "Aventureiro", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/2/22/Bundle_Red.png", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/5/5e/Adventurer%27s_Bundle.png", 
                 itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
-                recompensa: "Anel Pequeno Magnético" 
+                recompensa: "Anel Pequeno Magnético(1)" 
             }
         ]     
     },
     {
     nome: "Mural de Recados", 
-        recompensa: "amizade", 
+        recompensa: "Amizade ♡", 
         img:"https://stardewvalleywiki.com/mediawiki/images/1/16/Community_Center_Bulletin_Board_PT.png",
         imgPronta: "https://stardewvalleywiki.com/mediawiki/images/7/76/Finished_Bulletin_Board.png",
         conjuntos: [
             { 
-                nome: "Ferreiro", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/c/c2/Bundle_Copper.png", 
+                nome: "Cozinheiro", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/e/ea/Chef%27s_Bundle.png", 
                 itens: ["Barra de cobre", "Barra de ferro", "Barra de ouro"], 
-                recompensa: "Fornalha" 
+                recompensa: "Bolo rosa (3)" 
             },
             { 
-                nome: "Geólogo", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/b/b5/Bundle_Purple.png", 
+                nome: "Tinta", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/a/a5/Dye_Bundle.png", 
                 itens: ["Quartzo", "Cristal de terra", "Lágrima congelada", "Essência solar"], 
-                recompensa: "Omnigeodo (5)" 
+                recompensa: "Gerador de sementes (1)" 
             },
             { 
-                nome: "Aventureiro", 
-                icone: "https://stardewvalleywiki.com/mediawiki/images/2/22/Bundle_Red.png", 
+                nome: "Pesquisa de campo", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/8/86/Field_Research_Bundle.png", 
                 itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
-                recompensa: "Anel Pequeno Magnético" 
-            }
+                recompensa: "Máquina de reciclagem (1)" 
+            },
+            { 
+                nome: "Forragem", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/3/32/Fodder_Bundle.png", 
+                itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
+                recompensa: "Aquecedor (1)" 
+            },
+            { 
+                nome: "Encantador", 
+                icone: "https://stardewvalleywiki.com/mediawiki/images/6/69/Enchanter%27s_Bundle.png", 
+                itens: ["Baba solar", "Asa de morcego", "Essência solar", "Essência vazia"], 
+                recompensa: "Barra de ouro (5)" 
+            },
         ]     
     },
     {
