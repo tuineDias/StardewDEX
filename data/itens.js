@@ -191,7 +191,7 @@ const listaItens = {
         img: "https://stardewvalleywiki.com/mediawiki/images/e/ed/Hardwood.png", 
         preco: "20g", 
         local: "Solo", 
-        obs: "Solo arado." 
+        obs: "Madeira de lei é um recurso. Pode ser obtido cortando um toco grande com um machado de cobre ou superior, ou um tronco grande com um machado de aço ou superior.Seis (6) tocos grandes reaparecem diariamente no Bosque Secreto, possibilitando a obtenção de 12 madeiras de lei por dia. Se você tem o mapa da Fazenda de Floresta, há mais oito (8) tocos no lado esquerdo da sua fazenda, que reaparecem diariamente. Também pode ser encontrado ao quebrar Caixas e Barris nas minas. Árvore de mogno e Tocos também podem ser encontradas nas As Minas, nos níveis 41 ao 79, durante a missão Perigo nas Profundezas ou após ativar o Santuário do Desafio, fornecendo mais um meio de adquirir a Madeira de Lei.Árvores normais possuem uma chance de fornecer madeira de lei com a habilidade de lenhador. Robin pode também lhe presentar com 25 madeiras de lei no Festival da Estrela Invernal. Você também pode obter 8-13 madeiras de lei cortando uma Árvore de mogno." 
         }
 };
 
