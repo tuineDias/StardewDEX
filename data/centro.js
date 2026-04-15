@@ -33,7 +33,7 @@ const dadosCentro = [
              { 
                 nome: "Construção", 
                 icone: "https://stardewvalleywiki.com/mediawiki/images/7/7a/Construction_Bundle.png", 
-                itens: ["item_madeira", "item_madeira", "item_pedra", "Flor de açafrão"], 
+                itens: ["item_madeira", "item_madeira", "item_pedra", "item_madeira-de-lei (10)"], 
                 recompensa: "Carvoaria (1)" 
             },
             
