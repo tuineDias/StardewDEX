@@ -186,12 +186,12 @@ const listaItens = {
         local: "Corte árvores com um machado", 
         obs: "Pedra é um recurso obtido minerando rochas com uma picareta. Pedras também podem ser compradas com a Robin na Carpintaria por Gold.png20 ouros no ano 1 e por Gold.png100 ouros no ano 2+ ou encontrada em baus de pesca. Vinte pedras também podem ser recebidas como um presente de Robin na Festival da Estrela Invernal."
         },
-        "item_madeira-de-lei (10)": { 
+        "item_madeira-de-lei (10)":{ 
         img: "https://stardewvalleywiki.com/mediawiki/images/thumb/e/ed/Hardwood.png/24px-Hardwood.png", 
         preco: "20g", 
         local: "Solo", 
         obs: "Solo arado." 
-        
+        }
 };
 
 
